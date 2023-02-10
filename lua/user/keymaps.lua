@@ -64,3 +64,10 @@ keymap("t", "<C-Left>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-Down>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-Up>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-Right>", "<C-\\><C-N><C-w>l", term_opts)
+
+-- Telescope
+keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>t", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Comment
+keymap("n", "<leader>/", "gcc", {}) -- comment line
