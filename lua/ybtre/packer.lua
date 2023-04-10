@@ -29,6 +29,8 @@ return require('packer').startup(function(use)
 
 	use('mbbill/undotree')
 
+    use {"ray-x/lsp_signature.nvim"}
+
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v2.x',
