@@ -1,4 +1,5 @@
-vim.opt.guicursor = ""
+--vim.opt.guicursor = ""
+vim.opt.guicursor=block
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
