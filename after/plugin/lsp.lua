@@ -60,6 +60,15 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<A-s>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+
+require('lspconfig').ols.setup({
+    on_attach = lsp.on_attach,
+    cmd = {"C:\\Users\\hristo.vuchev\\Documents\\WorkVerse\\ols\\ols.exe"},
+    --root_dir = function() return vim.loop.cwd() end,
+    filetypes = {"odin"},
+--    single_file_support = true
+})
+
 lsp.setup()
 
 vim.diagnostic.config({

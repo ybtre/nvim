@@ -33,6 +33,8 @@ return require('packer').startup(function(use)
 
     use('vim-airline/vim-airline')
     use('vim-airline/vim-airline-themes')
+
+    use('Tetralux/odin.vim')
    
     use {
         "windwp/nvim-autopairs",
