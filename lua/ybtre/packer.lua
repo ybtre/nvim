@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
 	})
 
 	use "rebelot/kanagawa.nvim"
+        use "lifepillar/vim-gruvbox8"
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 

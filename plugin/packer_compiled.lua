@@ -175,6 +175,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\hristo.vuchev\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
+  },
+  ["vim-gruvbox8"] = {
+    loaded = true,
+    path = "C:\\Users\\hristo.vuchev\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-gruvbox8",
+    url = "https://github.com/lifepillar/vim-gruvbox8"
   }
 }
 
