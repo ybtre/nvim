@@ -6,8 +6,8 @@ vim.opt.guicursor=block
 --vim.opt.relativenumber = true
 
 vim.opt.tabstop = 8
-vim.opt.softtabstop = 6
-vim.opt.shiftwidth = 6
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
