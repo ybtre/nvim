@@ -6,3 +6,5 @@ require"lsp_signature".setup({
         border = "rounded"
     }
 })
+
+require("mini.cursorword").setup{}

@@ -75,7 +75,11 @@ return require('packer').startup(function(use)
             }
         end
       }
-         
+
+      use {
+        'echasnovski/mini.cursorword',
+        branch = 'stable', 
+      }
       
 
 end)
