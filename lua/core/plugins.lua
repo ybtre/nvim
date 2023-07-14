@@ -27,6 +27,7 @@ local plugins = {
   'ray-x/lsp_signature.nvim',
   { 'echasnovski/mini.pairs',      version = '*' },
   { 'echasnovski/mini.cursorword', version = '*' },
+  { 'echasnovski/mini.starter',    version = '*' },
 
   {
     'folke/which-key.nvim',

@@ -7,5 +7,8 @@ require("core.plugin_config.lsp_zero")
 require("core.plugin_config.lsp_signature")
 require("core.plugin_config.harppon")
 require("core.plugin_config.undotree")
+
 require("core.plugin_config.mini_pairs")
 require("core.plugin_config.mini_cursorword")
+require("core.plugin_config.mini_starter")
+require("core.plugin_config.mini_animate")
