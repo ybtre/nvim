@@ -15,6 +15,9 @@ local plugins = {
   'wbthomason/packer.nvim',
 
   'ellisonleao/gruvbox.nvim',
+  'arturgoms/moonbow.nvim',
+  'shatur/neovim-ayu',
+
   'rebelot/kanagawa.nvim',
   'folke/tokyonight.nvim',
 
@@ -28,6 +31,7 @@ local plugins = {
   { 'echasnovski/mini.pairs',      version = '*' },
   { 'echasnovski/mini.cursorword', version = '*' },
   { 'echasnovski/mini.starter',    version = '*' },
+  { 'echasnovski/mini.jump2d',     version = '*' },
 
   {
     'folke/which-key.nvim',
@@ -41,7 +45,7 @@ local plugins = {
 
   {
     'nvim-telescope/telescope.nvim',
-    tag          = '0.1.x',
+    tag = '0.1.2',
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
 
