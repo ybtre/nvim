@@ -17,6 +17,7 @@ local plugins = {
   'ellisonleao/gruvbox.nvim',
   'arturgoms/moonbow.nvim',
   'shatur/neovim-ayu',
+  'folke/lsp-colors.nvim',
 
   'rebelot/kanagawa.nvim',
   'folke/tokyonight.nvim',
@@ -41,6 +42,18 @@ local plugins = {
       vim.o.timeoutlen = 300
     end,
     opts = {}
+  },
+
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+      position = "right",
+      auto_close = true,
+    },
   },
 
   {
