@@ -42,7 +42,7 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
   vim.keymap.set("i", "<A-s>", function() vim.lsp.buf.signature_help() end, opts)
 
-  lsp.buffer_autoformat()
+  --lsp.buffer_autoformat()
 end)
 
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
