@@ -18,6 +18,8 @@ local plugins = {
   'arturgoms/moonbow.nvim',
   'shatur/neovim-ayu',
   'folke/lsp-colors.nvim',
+  { 'lifepillar/vim-gruvbox8',      branch = "neovim" },
+  { 'luisiacc/gruvbox-baby' },
 
   'rebelot/kanagawa.nvim',
   'folke/tokyonight.nvim',
