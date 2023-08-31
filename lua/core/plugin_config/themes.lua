@@ -1,6 +1,6 @@
 vim.o.termguicolors = true
 --vim.cmd [[ colorscheme gruvbox ]]
---vim.cmd [[ colorscheme gruvbox8 ]]
+vim.cmd [[ colorscheme gruvbox8 ]]
 --vim.cmd [[ colorscheme gruvbox-baby ]]
 --vim.cmd [[ colorscheme moonbow ]]
 --vim.cmd [[ colorscheme ayu ]]
