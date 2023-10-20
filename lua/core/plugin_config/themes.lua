@@ -1,7 +1,8 @@
 vim.o.termguicolors = true
---vim.cmd [[ colorscheme gruvbox ]]
-vim.cmd [[ colorscheme gruvbox8 ]]
---vim.cmd [[ colorscheme gruvbox-baby ]]
+
+--vim.cmd [[ colorscheme gruvbox8_hard ]]
+vim.cmd [[ colorscheme iceberg ]]
+--vim.cmd [[ colorscheme despacio ]]
 --vim.cmd [[ colorscheme moonbow ]]
 --vim.cmd [[ colorscheme ayu ]]
 --vim.cmd [[ colorscheme kanagawa ]]

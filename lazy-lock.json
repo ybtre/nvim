@@ -1,9 +1,9 @@
 {
+  "Despacio": { "branch": "master", "commit": "d214f8424a97ca35f8c74fbd7e8968326585165c" },
   "LuaSnip": { "branch": "master", "commit": "0b4950a237ce441a6a3a947d501622453f6860ea" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "44b16d11215dce86f253ce0c30949813c0a90765" },
-  "gruvbox-baby": { "branch": "main", "commit": "4f45f5182b986ea8099b8ad0207e07f1bc49a47f" },
-  "gruvbox.nvim": { "branch": "main", "commit": "df149bccb19a02c5c2b9fa6ec0716f0c0487feb0" },
   "harpoon": { "branch": "master", "commit": "21f4c47c6803d64ddb934a5b314dcb1b8e7365dc" },
+  "iceberg.vim": { "branch": "master", "commit": "e01ac08c2202e7544531f4d806f6893539da6471" },
   "kanagawa.nvim": { "branch": "master", "commit": "1749cea392acb7d1548a946fcee1e6f1304cd3cb" },
   "lazy.nvim": { "branch": "main", "commit": "25beed5e2e935ebc00d7e3eed1dc502df3c40e39" },
   "lsp-colors.nvim": { "branch": "main", "commit": "2bbe7541747fd339bdd8923fc45631a09bb4f1e5" },
@@ -13,7 +13,6 @@
   "mason-lspconfig.nvim": { "branch": "main", "commit": "828a538ac8419f586c010996aefa5df6eb7c250b" },
   "mason.nvim": { "branch": "main", "commit": "5ad3e113b0c3fde3caba8630599373046f6197e8" },
   "mini.cursorword": { "branch": "main", "commit": "066770d17218d783dc76abde80fde89967f94907" },
-  "mini.jump2d": { "branch": "main", "commit": "4c73976487fd59caa277d8f5374327e425f930d3" },
   "mini.pairs": { "branch": "main", "commit": "963b800d0524eadd297199207011b98684205ada" },
   "mini.starter": { "branch": "main", "commit": "9591477df06e71352a155823d0eb506ff9cae52b" },
   "moonbow.nvim": { "branch": "master", "commit": "2564c8a8efc18eb65104c75b404972e4fabd1d25" },
@@ -29,6 +28,5 @@
   "tokyonight.nvim": { "branch": "main", "commit": "1ee11019f8a81dac989ae1db1a013e3d582e2033" },
   "trouble.nvim": { "branch": "main", "commit": "20d1b30d6925213abece21d35858a16e11d1e9fc" },
   "undotree": { "branch": "master", "commit": "0e11ba7325efbbb3f3bebe06213afa3e7ec75131" },
-  "vim-gruvbox8": { "branch": "neovim", "commit": "24b2ab31c5b65576f96a1e51058657fd85cba0b8" },
-  "which-key.nvim": { "branch": "main", "commit": "38b990f6eabf62014018b4aae70a97d7a6c2eb88" }
+  "vim-gruvbox8": { "branch": "neovim", "commit": "24b2ab31c5b65576f96a1e51058657fd85cba0b8" }
 }

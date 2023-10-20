@@ -14,15 +14,14 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
   'wbthomason/packer.nvim',
 
-  'ellisonleao/gruvbox.nvim',
   'arturgoms/moonbow.nvim',
   'shatur/neovim-ayu',
   'folke/lsp-colors.nvim',
   { 'lifepillar/vim-gruvbox8',      branch = "neovim" },
-  { 'luisiacc/gruvbox-baby' },
-
+  'cocopon/iceberg.vim',
   'rebelot/kanagawa.nvim',
   'folke/tokyonight.nvim',
+  'AlessandroYorba/Despacio',
 
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
@@ -34,17 +33,6 @@ local plugins = {
   { 'echasnovski/mini.pairs',      version = '*' },
   { 'echasnovski/mini.cursorword', version = '*' },
   { 'echasnovski/mini.starter',    version = '*' },
-  { 'echasnovski/mini.jump2d',     version = '*' },
-
-  {
-    'folke/which-key.nvim',
-    event = "VeryLazy",
-    init = function()
-      vim.o.timeout = true
-      vim.o.timeoutlen = 300
-    end,
-    opts = {}
-  },
 
   {
     "folke/trouble.nvim",
