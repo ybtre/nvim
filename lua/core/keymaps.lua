@@ -65,3 +65,17 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     vim.cmd([[call matchadd("Important", "IMPORTANT:")]])
   end,
 })
+
+
+--NOTE: save folds on buffer close
+vim.api.nvim_create_autocmd({"BufWinLeave"}, {
+    pattern = {"*.*"},
+    desc = "save view (folds), when closing file",
+    command = "mkview",
+})
+--NOTE: save folds on buffer close
+vim.api.nvim_create_autocmd({"BufWinEnter"}, {
+    pattern = {"*.*"},
+    desc = "load view (folds), when opening file",
+    command = "silent! loadview"
+})
