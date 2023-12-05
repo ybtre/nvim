@@ -12,14 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  'wbthomason/packer.nvim',
 
-  'Tetralux/odin.vim',
-
-  'arturgoms/moonbow.nvim',
+  -- Colorschemes
   'shatur/neovim-ayu',
-  'folke/lsp-colors.nvim',
-  { 'lifepillar/vim-gruvbox8',      branch = "neovim" },
   'cocopon/iceberg.vim',
   'rebelot/kanagawa.nvim',
   'folke/tokyonight.nvim',
@@ -31,17 +26,58 @@ local plugins = {
     opts = {},
   },
 
+  -- LSP and language related
+  'ray-x/lsp_signature.nvim',
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
+  {
+      'nvim-telescope/telescope.nvim',
+      tag = '0.1.2',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+  },
+  {
+    "nvim-treesitter/nvim-treesitter", 
+    build = ":TSUpdate"
+  },
+  {
+      'VonHeikemen/lsp-zero.nvim',
+      branch = 'v2.x',
+      dependencies = {
+          -- lsp support
+          { 'neovim/nvim-lspconfig' },
+          {
+              'williamboman/mason.nvim',
+              build = function()
+                  pcall(vim.cmd, 'MasonUpdate')
+              end,
+          },
+          { 'williamboman/mason-lspconfig.nvim' },
 
-  'theprimeagen/harpoon',
+          --Autocomplete
+          { 'hrsh7th/nvim-cmp' },
+          { 'hrsh7th/cmp-nvim-lsp' },
+          { 'L3MON4D3/LuaSnip' },
+      }
+  },
+
+  -- Language related
+  'Tetralux/odin.vim',
+
+  -- Useful Utils
+  -- 'theprimeagen/harpoon',
   'mbbill/undotree',
-  'ray-x/lsp_signature.nvim',
-  { 'echasnovski/mini.pairs',      version = '*' },
-  { 'echasnovski/mini.cursorword', version = '*' },
-  { 'echasnovski/mini.starter',    version = '*' },
+  'godlygeek/tabular',
 
+  -- MINI plugins
+  'echasnovski/mini.pairs',
+  'echasnovski/mini.cursorword',
+  'echasnovski/mini.starter',
+  --'echasnovski/mini.jump2d',
+  --'echasnovski/mini.animate',
+
+  -- FOLKE plugins
+  'folke/lsp-colors.nvim',
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -52,44 +88,26 @@ local plugins = {
       auto_close = true,
     },
   },
-
-  {
-    'nvim-telescope/telescope.nvim',
-    tag = '0.1.2',
-    dependencies = { 'nvim-lua/plenary.nvim' }
-  },
-
-  {
-    "nvim-treesitter/nvim-treesitter",
-    build = function()
-      require("nvim-treesitter.install").update({ with_sync = true })
+    {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    init = function()
+        vim.o.timeout = true
+        vim.o.timeoutlen = 300
     end,
-  },
-
-  {
-    'VonHeikemen/lsp-zero.nvim',
-    branch = 'v2.x',
-    dependencies = {
-      -- lsp support
-      { 'neovim/nvim-lspconfig' },
-      {
-        'williamboman/mason.nvim',
-        build = function()
-          pcall(vim.cmd, 'MasonUpdate')
-        end,
-      },
-      { 'williamboman/mason-lspconfig.nvim' },
-
-      --Autocomplete
-      { 'hrsh7th/nvim-cmp' },
-      { 'hrsh7th/cmp-nvim-lsp' },
-      { 'L3MON4D3/LuaSnip' },
+    opts = {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
     }
   },
+
 }
 
 local opts = {}
 
+
+-- PLUGINS SETUPS?
 require("lazy").setup(plugins, opts)
 
 require("solarized-osaka").setup({
