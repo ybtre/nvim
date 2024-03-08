@@ -21,32 +21,36 @@ local plugins = {
   'p00f/alabaster.nvim',
 
   -- LSP and language related
-  'ray-x/lsp_signature.nvim',
+  { 'ray-x/lsp_signature.nvim', pin = true, },
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   {
       'nvim-telescope/telescope.nvim',
+      pin = true,
       tag = '0.1.2',
       dependencies = { 'nvim-lua/plenary.nvim' }
   },
   {
-    "nvim-treesitter/nvim-treesitter", 
-    build = ":TSUpdate"
+    "nvim-treesitter/nvim-treesitter",
+    pin = true,
+    build = ":TSUpdate",
   },
   {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v2.x',
+      pin = true,
       dependencies = {
           -- lsp support
-          { 'neovim/nvim-lspconfig' },
+          { 'neovim/nvim-lspconfig', pin = true, },
           {
               'williamboman/mason.nvim',
+              pin = true,
               build = function()
                   pcall(vim.cmd, 'MasonUpdate')
               end,
           },
-          { 'williamboman/mason-lspconfig.nvim' },
+          { 'williamboman/mason-lspconfig.nvim', pin = true },
 
           --Autocomplete
           { 'hrsh7th/nvim-cmp' },
